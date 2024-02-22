@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle Website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Raffle Website</h1>
+    </header>
+    <main>
+        <section id="raffle-details">
+            <h2>Raffle Details</h2>
+            <div id="prize-details">
+                <!-- Prize details will be displayed here -->
+            </div>
+            <form id="raffle-entry-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Enter Raffle</button>
+            </form>
+        </section>
+        <section id="winner-section" style="display: none;">
+            <h2>Winner</h2>
+            <div id="winner-details">
+                <!-- Winner details will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Raffle Website</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
