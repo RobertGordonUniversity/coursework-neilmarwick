@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle Management - Raffle Website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="createAccountLogin.html">Sign in and Create Account</a></li>
+                    <li><a href="activeRafflePrizes.html">Raffle Prizes</a></li>
+                    <li><a href="randomWinner.html">Raffle Winner</a></li>
+                </ul>
+            </nav>
+
+    <header>
+        <h1>Raffle Website</h1>
+    </header>
+    <main>
+        <!-- -	Allow raffle holders to add details of new raffle prizes. .-->
+        <section id="add-raffle-section">
+            <h2>Add New Raffle Prize</h2>
+            <form id="add-raffle-form">
+                <label for="prize-name">Prize Name:</label>
+                <input type="text" id="prize-name" name="prize-name" required>
+                <label for="prize-image">Prize Image URL:</label>
+                <input type="text" id="prize-image" name="prize-image" required>
+                <label for="draw-date">Draw Date:</label>
+                <input type="date" id="draw-date" name="draw-date" required>
+                <button type="submit">Add Prize</button>
+            </form>
+        </section>
+        <section id="active-raffles-section">
+            <h2>Active Raffle Prizes</h2>
+            <div id="active-raffles-gallery">
+                <!-- Active raffle prizes gallery will be displayed here -->
+                <img src="cat.jpg" alt="Raffle Prize 1">
+                <img src="dog.jpg" alt="Raffle Prize 2">
+                <img src="wine2.jpg" alt="Raffle Prize 3">
+                <img src="boat.jpg" alt="Raffle Prize 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Raffle Website</p>
+    </footer>
+    <script src="scripts/preventXSS.js"></script>
+</body>
+</html>

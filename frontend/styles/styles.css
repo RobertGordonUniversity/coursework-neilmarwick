@@ -1,3 +1,4 @@
+/* Shared styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,10 +13,13 @@ header {
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
 }
 
 section {
+    width: 45%;
     margin-bottom: 20px;
 }
 
@@ -31,17 +35,30 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
+input[type="date"],
 button {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
     background-color: #333;
     color: #fff;
     cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 footer {
@@ -52,4 +69,68 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Additional styles for prize details */
+.prize-info {
+    display: flex;
+    align-items: center;
+}
+
+.prize-image {
+    width: 400px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.prize-description {
+    flex: 1;
+}
+
+/* Additional styles for raffle details */
+#raffle-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#prize-details {
+    flex: 1;
+}
+
+#raffle-entry-form {
+    flex: 1;
+    max-width: 300px; /* Adjust as needed */
+    margin-left: 20px; /* Adjust spacing between sections */
+}
+
+/* Navigation CSS */
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#raffle-entry-form {
+    float: right; /* Pushes the form to the right */
+    margin-right: 100px;
 }

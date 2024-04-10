@@ -7,33 +7,54 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="createAccountLogin.html">Sign in and Create Account</a></li>
+            <li><a href="activeRafflePrizes.html">Raffle Prizes</a></li>
+            <li><a href="randomWinner.html">Raffle Winner</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Raffle Website</h1>
     </header>
     <main>
+        <!--	Have a user interface that will allow members of the public to enter contact details to be entered 
+            into a raffle as a guest without an account 
+            (also include some unpublished detail that will tie guest users to their entry). 
+        -->
+
+        
         <section id="raffle-details">
-            <h2>Raffle Details</h2>
             <div id="prize-details">
-                <!-- Prize details will be displayed here -->
-            </div>
-            <form id="raffle-entry-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Enter Raffle</button>
-            </form>
-        </section>
-        <section id="winner-section" style="display: none;">
-            <h2>Winner</h2>
-            <div id="winner-details">
-                <!-- Winner details will be displayed here -->
+                <h2>Raffle Prize</h2>
+                <div class="prize-info">
+                    <img src="beach.jpg" alt="Raffle Prize Image" class="prize-image">
+                    <div class="prize-description">
+                        <p>This raffle prize is a luxurious vacation package to an exotic destination!</p>
+                        <p>Draw Date: April 30, 2024</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- Display some details about a single raffle prize and draw date (this can be static text or image).  -->
+        <form id="raffle-entry-form">
+            <h2>Enter your details to enter raffle as a guest</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enter Raffle</button>
+            <link rel="icon" href="data:,">
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 Raffle Website</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/preventXSS.js"></script>
 </body>
 </html>

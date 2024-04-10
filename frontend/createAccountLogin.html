@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle Website - Login</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="createAccountLogin.html">Sign in and Create Account</a></li>
+            <li><a href="activeRafflePrizes.html">Raffle Prizes</a></li>
+            <li><a href="randomWinner.html">Raffle Winner</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Raffle Website</h1>
+    </header>
+    <main>
+        <!-- -	This page Allows all users to access their own user accounts (sign up and login).-->
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit">Sign Up</button>
+                <!--this is a security aspect of the website which makes sure that the password the user enters has to be secure -->
+                <p id="password-error" style="color: red; display: none;">Password must contain at least 8 characters, one number, and one uppercase and lowercase letter.</p>
+                <p id="match-error" style="color: red; display: none;">Passwords do not match.</p>
+            </form>            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Raffle Website</p>
+    </footer>
+    <script src="scripts/passwordValidation.js"></script>
+    <script src="scripts/preventXSS.js"></script>
+</body>
+</html>
