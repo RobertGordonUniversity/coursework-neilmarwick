@@ -1,5 +1,6 @@
 #This script checks if Express.js, body-parser, uuid, and pg are installed in the node_modules directory. 
 #If not, it installs them using npm install. Then, it starts the server by running node server.js. 
+#To run this file, open a bash terminal and type 'bash setup.sh'
 
 #!/bin/bash
 
