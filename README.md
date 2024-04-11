@@ -1,3 +1,3 @@
 This is the readme file for the CM4025 coursework
 
-run instructions.sh to install express node, it will also start the node server. run it by writing 'bash instructions.sh' in terminal, but you need to be in the same directory as instructions.sh for it to work
+run setup.sh to install all necessary packages and to start the  server, it will also start the node server. run it by writing 'bash setup.sh' in a shell terminal, but you need to be in the same directory as setup.sh for it to work
